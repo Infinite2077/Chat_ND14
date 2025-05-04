@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, blue, black,red);
+    background: linear-gradient(45deg, red, black,blue);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,9 +13,19 @@ body {
 
 header {
     text-align: center;
-    background: linear-gradient(to right, blue,black,red); ;
+    background: linear-gradient(to right, red,black,blue); ;
     padding: 0,3rem;
     color: white;
+}
+
+header button{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: chocolate;
+    border-radius: 50%;
 }
 
 main {
@@ -55,4 +65,32 @@ main {
     color: white;
     padding: 0 1rem;
     font-size: 1.2rem;
+}
+
+.auth{
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color:  lightblue;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+form label{
+    margin-top: 0.5 rem;
+}
+
+form input{
+    padding: 0.3rem;
+}
+
+form button{
+    margin-top: 1rem;
+    background-color: white;
+    border: none;
+    padding: 0.5rem;
 }
